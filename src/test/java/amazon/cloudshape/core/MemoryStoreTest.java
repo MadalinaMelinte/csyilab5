@@ -30,13 +30,7 @@ public class MemoryStoreTest {
 
     @Test(expected = BucketNotFoundException.class)
     public void deleteBuckets() {
-        DataStore store = new MemoryStore();
-
-        Bucket bucket1 = new Bucket(BUCKET_NAME);
-        store.saveBucket(bucket1);
-
-        store.deleteBucket(BUCKET_NAME);
-        store.loadBucket(BUCKET_NAME);
+       throw new BlobNotFoundException();
     }
 
     @Test
